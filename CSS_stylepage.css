@@ -164,50 +164,8 @@ ul {
   color: #fff;
 }
 
-#mobile_menu{
+#mobile_menu {
   display: none;
-}
-
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 16px;
-  }
-
-  #nav_menu {
-    display: none;
-  }
-
-  #mobile_menu{
-    display: block;
-  }
-
-  header {
-    font-size: 150%;
-  }
-
-  html {
-    padding-right: 2%;
-  }
-
-  li {
-    font-size: 125%;
-  }
-
-  p {
-    font-size: 125%;
-  }
-
-  .bike-type {
-    width: 100%;
-  }
-
-  .bike-type:nth-child(2) {
-    margin-left: 0;
-  }
-
-  img {
-    width: 100%;
-  }
 }
 
 .inventory {
@@ -244,21 +202,6 @@ table {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 767px) {
-  table {
-    display: flexbox;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  th, td {
-    display: flexbox;
-  }
-  th {
-    text-align: center;
-  }
-}
-
 .form-row {
   display: flex;
   flex-wrap: wrap;
@@ -270,7 +213,85 @@ table {
   margin-bottom: 20px;
 }
 
-@media (max-width: 767px) {
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  #nav_menu {
+    display: none;
+  }
+
+  #mobile_menu {
+    display: block;
+  }
+
+  header {
+    font-size: 150%;
+  }
+
+  html {
+    padding-right: 2%;
+  }
+
+  li {
+    font-size: 125%;
+  }
+
+  p {
+    font-size: 125%;
+  }
+
+  .bikes-container {
+    flex-direction: column;
+  }
+
+  .bike-type {
+    width: 100%;
+  }
+
+  .bike-type:nth-child(2) {
+    margin-left: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin-bottom: 1rem;
+  }
+
+  table {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  th, td {
+    display: block;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  .form-field {
+    flex-basis: 100%;
+  }
+}
+
+ @media (max-width: 767px) {
   .form-field {
     flex-basis: 100%;
   }
