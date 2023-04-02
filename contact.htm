@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+***********************************************************************
+Title: Contact Page
+Use: Hayes Bicycle's Contact page 
+Author: Alex Hayes
+School/Term: Southern Illinois University, Spring 2023
+Developed: Feb 18, 2023 
+Tested: Feb 18, 2023; Passed on Firefox, Chrome and edge browsers.
+*************************************************************************
+-->
+<html lang="en-US">
+        <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Bicycle shop offering sales and rentals">
+                <meta name="keywords" content="bicycle, sales, rentals, service">
+                <link rel="stylesheet" href="slicknav.css">
+                <link href="CSS_stylepage.css" rel="stylesheet" type="text/css">
+                <link rel="shortcut icon" href="icon.ico"> 
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="jquery.slicknav.min.js"></script>
+                <script>
+               $(document).ready(function(){
+                 $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+               });
+            </script>
+      <title>Hayes Bicyles</title>
+               
+      </head>
+      <body>
+      <h1>Hayes Bicycles</h1>
+      <div class="nav-container">
+        <nav id="mobile_menu"></nav>
+              <nav id="nav_menu">  
+        <ul class="nav-links">
+          <li><a href="index.htm">Home Page</a></li>
+          <li><a href="rentals.htm">Rentals</a></li>
+          <li><a href="sales.htm">Sales</a></li>
+          <li><a href="contact.htm">Contact</a></li>
+          <li><a href="services.htm">Services</a></li>
+        </ul>
+        </nav>
+      </div>
+      <body>
+        <form id="contact-form" action="response.htm" method="post">
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required minlength="7" maxlength="25" placeholder="Full Name" autofocus>
+                </div>
+                <div class="form-field">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required minlength="5" maxlength="50" placeholder="Address">
+                </div>
+                <div class="form-field">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required minlength="1" maxlength="25" placeholder="City">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="state">State:</label>
+                    <select id="state" name="state" required>
+                        <option value="">Select a State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="CA">California</option>
+                        <option value="FL">Florida</option>
+                        <option value="NY">Illinois</option>
+                        <option value="TX">Texas</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="zipCode">Zip Code:</label>
+                    <input type="text" id="zipCode" name="zipCode" required minlength="5" maxlength="10" pattern="\d{5}(-\d{4})?" placeholder="99999 or 99999-9999">
+                </div>
+                <div class="form-field">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required minlength="10" maxlength="12" pattern="\d{3}-\d{3}-\d{4}" placeholder="999-999-9999">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required minlength="10" maxlength="25" placeholder="Email Address">
+                </div>
+                <div class="form-field">
+                        <label for="bicycleType">Bicycle Type:</label>
+                        <input type="radio" id="bikeType1" name="bicycleType" value="Type 1" required> Type 1
+                        <input type="radio" id="bikeType2" name="bicycleType" value="Type 2" required> Type 2
+                    </div> 
+                <div class="form-field">
+                    <label for="submitDate">Submission Date:</label>
+                    <input type="date" id="submitDate" name="submitDate" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="inquiryType">Inquiry Type:</label>
+                    <input type="checkbox" id="sales" name="inquiryType" value="Sales"> Sales
+                    <input type="checkbox" id="service" name="inquiryType" value="Service"> Service
+                    <input type="checkbox" id="rental" name="inquiryType" value="Rental"> Rental
+                </div>
+                <div> 
+                <div class="form-row">
+                        <div class="form-field">
+                            <label for="Password">Create a Password:</label>
+                            <input type="password" id="Password" name="Password" required minlength="10" maxlength="25" placeholder="Password">
+                        </div>
+                    <div>
+                        <div class="form-row">
+                                <div class="form-field">
+                                    <label for="note">Note:</label>
+                                    <textarea id="note" name="note" maxlength="200" placeholder="Leave a note (up to 200 characters)"></textarea>
+                                </div>
+                            </div>
+                             <div class="form-row">
+                                <div class="button-group">
+                                 <input type="submit" value="Send">
+                                 <input type="reset" value="Reset">
+                     </div>
+                </form>
+            </body>
+            </html>

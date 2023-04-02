@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+***********************************************************************
+Title: Rentals Page
+Use: To look at bicycles
+Author: Alex Hayes
+School/Term: Southern Illinois University, Spring 2023
+Developed: Feb 12, 2023
+Tested: Feb 12, 2023; Passed on Firefox,Chrome and edge browsers.
+*************************************************************************
+ -->
+ <!DOCTYPE html>
+ <html lang="en-US">
+   <head>
+     <meta charset="utf-8">
+     <meta name="description" content="Bicycle shop offering sales and rentals">
+     <meta name="keywords" content="bicycle, sales, rentals, service">
+     <title>Sales Page</title>
+     <link rel="stylesheet" href="slicknav.css">
+     <link href="CSS_stylepage.css" rel="stylesheet" type="text/css">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="jquery.slicknav.min.js"></script>
+     <script>
+       $(document).ready(function(){
+         $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+       });
+     </script>
+   </head>
+   <body>
+     <h1>Rental Bikes</h1>
+     <div class="nav-container">
+       <nav id="mobile_menu"></nav>
+       <nav id="nav_menu">  
+         <ul class="nav-links">
+           <li><a href="index.htm">Home Page</a></li>
+           <li><a href="rentals.htm">Rentals</a></li>
+           <li><a href="sales.htm">Sales</a></li>
+           <li><a href="contact.htm">Contact</a></li>
+           <li><a href="services.htm">Services</a></li>
+         </ul>
+       </nav>
+     </div>
+     <div class="inventory">
+       <h2>Inventory</h2>
+     </div>
+     <div class="bikes-container">
+       <div class="bike-type">
+         <img src="hayes_cruiser.jpg" alt="Hayes Cruiser">
+         <h2>Hayes Cruiser</h2>
+         <p>Price: $500</p>
+       </div>
+       <div class="bike-type">
+         <img src="hayes_model_s.jpg" alt="Hayes Model S">
+         <h2>Hayes Model S</h2>
+         <p>Price: $800</p>
+       </div>
+       <div class="bike-type">
+         <img src="hayes_cross_country.jpg" alt="Hayes Cross-Country">
+         <h2>Hayes Cross-Country</h2>
+         <p>Price: $1200</p>
+       </div>
+       <div class="bike-type">
+         <img src="hayes_crosstrek.jpg" alt="Hayes CrossTrek">
+         <h2>Hayes CrossTrek</h2>
+         <p>Price: $1500</p>
+       </div>
+     </div>
+     <video width="640" height="360" autoplay muted>
+        <source src="video.mp4" type="video/mp4">
+      </video>
+      
+
+   </body>
+ </html>
+
+ 

@@ -1,0 +1,267 @@
+/*
+***********************************************************************
+Title: Css page
+Use: to add a style 
+Author: Alex Hayes
+School/Term: Southern Illinois University, Spring 2023
+Developed: Feb 12, 2023 
+Tested: Feb 12, 2023; Passed on Firefox,Chrome and edge browsers.
+*************************************************************************
+*/ 
+body {
+  margin: 1%;
+  padding: 1%;
+  font-size: 18px;
+  background-color: #ADD8E6;
+}
+
+h1 {
+  padding: 1%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+p {
+  padding: 0.5% 1%;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  padding-left: 1%;
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  border: 1% solid blue;
+  border-radius: 1%;
+  display: block;
+  margin: 2% auto 0;
+  width: 50%;
+  position: relative;
+}
+
+img:hover {
+  border-color: solid blue; 
+}
+
+img:hover::before {
+  content: "new image";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('new-bike-image.jpeg');
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+  
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1, h2, h3 {
+  padding: 1%;
+}
+
+p {
+  padding: 0.5% 1%;
+}
+
+ul {
+  padding-left: 1%;
+}
+
+.bikes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bike-type {
+  width: 45%;
+}
+
+.bike-type:nth-child(2) {
+  margin-left: 2%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-right: 1%;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 0.5%;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.nav-links a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.nav-rentals {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-rentals li {
+  margin-right: 1%;
+}
+
+.nav-rentals a {
+  display: inline-block;
+  padding: 0.5%;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.nav-rentals a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+#mobile_menu{
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+
+  #nav_menu {
+      display: none;
+  }
+
+  #mobile_menu{
+      display: block;
+  }
+
+  header{
+      font-size: 150%;
+  }
+
+  html{
+      padding-right: 2%;
+  }
+
+  li{
+      font-size: 125%;
+  }
+
+  p{
+      font-size: 125%;
+  }
+
+}
+.inventory {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 1%;
+}
+
+.bike {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+  padding: 1%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.bike-type-name {
+  font-weight: bold;
+}
+
+.bike-type-price {
+  font-style: italic;
+}
+video {
+  display: block;
+  margin: 0 auto;
+}
+
+table {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  table {
+    display: flexbox;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  th, td {
+    display: flexbox;
+  }
+  th {
+    text-align: center;
+  }
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-field {
+  flex-basis: calc(33% - 20px);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .form-field {
+      flex-basis: 100%;
+  }
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--
+***********************************************************************
+Title: Contact Page
+Use: To look at bicycles
+Author: Alex Hayes
+School/Term: Southern Illinois University, Spring 2023
+Developed: Feb 12, 2023 
+Tested: Feb 12, 2023; Passed on Firefox,Chrome and edge browsers.
+*************************************************************************
+ -->
+ <html lang="en-US">
+  <head>
+          <meta charset="utf-8">
+          <meta name="description" content="Bicycle shop offering sales and rentals">
+          <meta name="keywords" content="bicycle, sales, rentals, service">
+          <link rel="stylesheet" href="slicknav.css">
+          <link href="CSS_stylepage.css" rel="stylesheet" type="text/css">
+          <link rel="shortcut icon" href="icon.ico"> 
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script src="jquery.slicknav.min.js"></script>
+          <script>
+         $(document).ready(function(){
+           $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+         });
+      </script>
+<title>Hayes Bicyles</title>
+         
+</head>
+<body>
+<h1>Hayes Bicycles</h1>
+<div class="nav-container">
+  <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">  
+  <ul class="nav-links">
+    <li><a href="index.htm">Home Page</a></li>
+    <li><a href="rentals.htm">Rentals</a></li>
+    <li><a href="sales.htm">Sales</a></li>
+    <li><a href="contact.htm">Contact</a></li>
+    <li><a href="services.htm">Services</a></li>
+  </ul>
+  </nav>
+</div>
+<!--free image found at https://www.vecteezy.com/free-vector/bike-icon --> 
+<img src="symbol-of-a-bike-isolated-on-white-background-bike-outline-icon-free-vector.jpg" alt="This is a generic free bike logo">
+<h2>About Us</h2>
+<p>We are a top of the line bicycle company specializing in EXTRA fast Bicycles </p>
+<h2>Best Selling</h2>    
+<ul class="5 models">
+    <li>Hayes Flyer</li>
+    <li>Hayes Racer</li>
+    <li>Hayes Cruser</li>
+    <li>Hayes Boxer</li>
+    <li>Hayes Model S</li>
+
+</ul>
+
+<h2>Contact</h2>
+<ul class="Contact">
+        <li>School Link:<a href="https://siu.edu/"> Click Here</a></li>
+        <li>Phone: 123-456-7891 </li>
+        <li>City/State: Carbondale, IL</li>
+</ul>
+<audio autoplay loop>
+  <source src="audio-file.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+
+
+</body>
+</html>

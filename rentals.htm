@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+***********************************************************************
+Title: Rentals Page
+Use: To look at bicycles
+Author: Alex Hayes
+School/Term: Southern Illinois University, Spring 2023
+Developed: Feb 12, 2023
+Tested: Feb 12, 2023; Passed on Firefox,Chrome and edge browsers.
+*************************************************************************
+ -->
+ <html lang="en-US">
+  <head>
+          <meta charset="utf-8">
+          <meta name="description" content="Bicycle shop offering sales and rentals">
+          <meta name="keywords" content="bicycle, sales, rentals, service">
+      <link rel="stylesheet" href="slicknav.css">
+      <link href="CSS_stylepage.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="jquery.slicknav.min.js"></script>
+          <script>
+         $(document).ready(function(){
+           $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+         });
+      </script>
+          <title>Rental Page</title>
+         
+  </head>
+  <body>
+    <h1>Rental Bikes</h1>
+    <div class="nav-container">
+      <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">  
+      <ul class="nav-links">
+        <li><a href="index.htm">Home Page</a></li>
+        <li><a href="rentals.htm">Rentals</a></li>
+        <li><a href="sales.htm">Sales</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+        <li><a href="services.htm">Services</a></li>
+      </ul>
+      </nav>
+    </div>
+    <p>Looking for a quick ride? We offer two types of street bikes and two types of mountain bikes for rent.</p>
+
+    <h2>Mountain Bikes</h2>
+    <div class="bikes-container">
+      <div class="bike-type">
+        <h3>Mountain Bike 1</h3>
+        <p>Bike made to endure the most rugged of terrains.</p>
+        <ul>
+          <li>Pricing: $75 per day / $150 per week</li>
+        </ul>
+      </div>
+
+      <div class="bike-type">
+        <h3>Mountain Bike 2</h3>
+        <p>A mountain bike designed for efficiency and comfort</p>
+        <ul>
+          <li>Pricing: $75 per day / $150 per week</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Street Bikes</h2>
+    <div class="bikes-container">
+      <div class="bike-type">
+        <h3>Street Bike 1</h3>
+        <p>Wicked fast street bike ready to go.</p>
+        <ul>
+          <li>Pricing: $99 per day / $199 per week</li>
+        </ul>
+      </div>
+
+      <div class="bike-type">
+        <h3>Street Bike 2</h3>
+        <p>High-end street bike made for comfort.</p>
+        <ul>
+          <li>Pricing: $99 per day / $199 per week</li>
+        </ul>
+      </div>
+    </div>
+    <p>Disclaimer: helmets, padding, and skills not included</p>
+  </body>
+ </html>

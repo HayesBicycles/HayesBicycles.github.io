@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+***********************************************************************
+Title: Services Page
+Use: Hayes Bicycle's services page 
+Author: Alex Hayes
+School/Term: Southern Illinois University, Spring 2023
+Developed: Feb 18, 2023 
+Tested: Feb 18, 2023; Passed on Firefox, Chrome and edge browsers.
+*************************************************************************
+ -->
+ <html lang="en-US">
+  <head>
+          <meta charset="utf-8">
+          <meta name="description" content="Bicycle shop offering sales and rentals">
+          <meta name="keywords" content="bicycle, sales, rentals, service">
+          <link rel="stylesheet" href="slicknav.css">
+          <link href="CSS_stylepage.css" rel="stylesheet" type="text/css">
+          <link rel="shortcut icon" href="icon.ico"> 
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script src="jquery.slicknav.min.js"></script>
+          <script>
+         $(document).ready(function(){
+           $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+         });
+      </script>
+<title>Services</title>
+         
+</head>
+<body>
+<h1>Hayes Bicycles</h1>
+<div class="nav-container">
+  <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">  
+  <ul class="nav-links">
+    <li><a href="index.htm">Home Page</a></li>
+    <li><a href="rentals.htm">Rentals</a></li>
+    <li><a href="sales.htm">Sales</a></li>
+    <li><a href="contact.htm">Contact</a></li>
+    <li><a href="services.htm">Services</a></li>
+  </ul>
+  </nav>
+</div>
+<h2>Our Services</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Service</th>
+      <th>Description</th>
+      <th>Cost</th>
+      <th>Turnaround Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Safety Checks</td>
+      <td>Basic safety check to ensure all components are secure and working properly.</td>
+      <td>$25</td>
+      <td>24 hours</td>
+    </tr>
+    <tr>
+      <td>Brake Adjustments</td>
+      <td>Adjustment of brake pads and cables for optimal stopping power.</td>
+      <td>$20</td>
+      <td>Same day</td>
+    </tr>
+    <tr>
+      <td>Clean up and Lube</td>
+      <td>Cleaning of bike components and application of lubricant to moving parts for optimal performance.</td>
+      <td>$30</td>
+      <td>24 hours</td>
+    </tr>
+    <tr>
+      <td>Tire Repair</td>
+      <td>Repair or replacement of flat or damaged tires.</td>
+      <td>$15-40</td>
+      <td>Same day</td>
+    </tr>
+    <tr>
+      <td>Seat and Handlebar Adjustments</td>
+      <td>Adjustment of seat height and handlebar position for optimal comfort and posture.</td>
+      <td>$15</td>
+      <td>Same day</td>
+    </tr>
+    <tr>
+      <td>Cable Replacement</td>
+      <td>Replacement of cables for brakes or gears that are worn or damaged.</td>
+      <td>$25-50</td>
+      <td>24-48 hours</td>
+    </tr>
+    <tr>
+      <td>Parts Replacement</td>
+      <td>Replacement of worn or damaged bike components such as chains, pedals, or brakes.</td>
+      <td>given after estimate</td>
+      <td>24-72 hours</td>
+    </tr>
+    <tr>
+      <td>Repair Bike Chain</td>
+      <td>Repair or replacement of broken or worn bike chains.</td>
+      <td>$20-40</td>
+      <td>24-48 hours</td>
+    </tr>
+    <tr>
+      <td>Calibrate Gears</td>
+      <td>Adjustment of bike gears for optimal shifting and smooth ride.</td>
+      <td>$25</td>
+      <td>Same day</td>
+    </tr>
+    <tr>
+      <td>Adjust Wheel Hubs</td>
+      <td>Adjustment of wheel hubs for optimal alignment and smooth ride.</td>
+      <td>$20</td>
+      <td>Same day</td>
+    </tr>
+    <tr>
+      <td>Other Miscellaneous Repairs</td>
+      <td>Varies depending on the repair needed.</td>
+      <td>Varies</td>
+      <td>Varies</td>
+    </tr>
+  </tbody>
+</table>
