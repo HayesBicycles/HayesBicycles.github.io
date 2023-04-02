@@ -44,6 +44,7 @@ a {
   text-decoration: none;
   color: black;
 }
+
 img {
   border: 1% solid blue;
   border-radius: 1%;
@@ -54,7 +55,7 @@ img {
 }
 
 img:hover {
-  border-color: solid blue; 
+  border-color: solid blue;
 }
 
 img:hover::before {
@@ -70,8 +71,6 @@ img:hover::before {
   z-index: -1;
 }
 
-
-  
 h2 {
   text-align: center;
   font-size: 1.5em;
@@ -168,33 +167,49 @@ ul {
 #mobile_menu{
   display: none;
 }
+
 @media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
 
   #nav_menu {
-      display: none;
+    display: none;
   }
 
   #mobile_menu{
-      display: block;
+    display: block;
   }
 
-  header{
-      font-size: 150%;
+  header {
+    font-size: 150%;
   }
 
-  html{
-      padding-right: 2%;
+  html {
+    padding-right: 2%;
   }
 
-  li{
-      font-size: 125%;
+  li {
+    font-size: 125%;
   }
 
-  p{
-      font-size: 125%;
+  p {
+    font-size: 125%;
   }
 
+  .bike-type {
+    width: 100%;
+  }
+
+  .bike-type:nth-child(2) {
+    margin-left: 0;
+  }
+
+  img {
+    width: 100%;
+  }
 }
+
 .inventory {
   text-align: center;
   font-weight: bold;
@@ -219,6 +234,7 @@ ul {
 .bike-type-price {
   font-style: italic;
 }
+
 video {
   display: block;
   margin: 0 auto;
@@ -256,12 +272,12 @@ table {
 
 @media (max-width: 767px) {
   .form-field {
-      flex-basis: 100%;
+    flex-basis: 100%;
   }
 }
 
 .button-group {
   display: flex;
   justify-content: center;
-  gap: 10px; 
+  gap: 10px;
 }
